@@ -1,0 +1,19 @@
+{
+  "name": "02-workqueues",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "worker": "bun run src/worker.ts",
+    "new_task": "bun run src/new_task.ts"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.8"
+  }
+}

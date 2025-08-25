@@ -8,11 +8,19 @@ bun install
 
 To run:
 
+You should run as many as workers you want to instance:
 ```bash
-bun run src/index.ts
+bun worker
 ```
+and then send messages to the queue:
+After the message insert dots (.) to simulate more time
 
-This project was created using `bun init` in bun v1.1.42. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+
+```bash
+bun new_task MyMessage
+
+bun new_task MyMessage2..
+```
 
 ## Work Queues (aka Task Queues)
 
